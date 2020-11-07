@@ -4,11 +4,12 @@
   "description": "playwright e2e test.",
   "main": "test.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "ava"
   },
   "author": "Y.Takeuchi",
   "license": "ISC",
   "dependencies": {
+    "ava": "^3.13.0",
     "playwright": "^1.5.2",
     "playwright-cli": "^0.152.0"
   }
