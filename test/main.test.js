@@ -1,18 +1,5 @@
-const { chromium } = require('playwright');
+const {pageMacro} = require('../util/page-macro');
 const test = require('ava').default;
-const browserPromise = chromium.launch({
-  headless: false
-});
-
-async function pageMacro(t, callback) {
-  const browser = await browserPromise;
-  const page = await browser.newPage();
-  try {
-    await callback(t, page);
-  } finally {
-    await page.close();
-  }
-}
 
 test('一通り検索、ページ閲覧ができる', pageMacro, async (t, page) => {
   // Go to https://www.wikipedia.org/

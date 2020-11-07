@@ -4,7 +4,7 @@
   "description": "playwright e2e test.",
   "main": "test.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava test/**/*.test.js"
   },
   "author": "Y.Takeuchi",
   "license": "ISC",
