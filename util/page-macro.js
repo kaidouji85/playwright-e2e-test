@@ -1,7 +1,27 @@
-const { chromium } = require('playwright');
-const browserPromise = chromium.launch({
+const {chromium, webkit, firefox} = require('playwright');
+const browser = getBrowser(process.env.BROWSER)
+const browserPromise = browser.launch({
   headless: false
 });
+
+/**
+ * ブラウザ名に対応したブラウザタイプを返す
+ *
+ * @param browserName
+ * @return {BrowserType} ブラウザタイプ
+ */
+function getBrowser(browserName) {
+  switch(browserName) {
+    case 'webkit':
+      return webkit;
+    case 'chromium':
+      return chromium;
+    case 'firefox':
+      return firefox;
+    default:
+      return chromium;
+  }
+}
 
 /**
  * ページオブジェクトを生成するマクロ
