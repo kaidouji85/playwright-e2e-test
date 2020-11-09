@@ -4,10 +4,10 @@
 [playwright](https://playwright.dev) + [ava](https://github.com/avajs/ava) でe2eテストを作ってみました。
 
 ## テスト実行イメージ
-[![](https://img.youtube.com/vi/w6OJFvK5WlY/0.jpg)](https://www.youtube.com/watch?v=w6OJFvK5WlY)
-* 0:06 〜 0:10 e2eテストの実行
-* 0:11 〜 0:17 テストスクリーンショットの確認
+以下URLでテスト実行画面を公開しています。  
+https://studio.youtube.com/video/w6OJFvK5WlY/edit
 
+[![](https://img.youtube.com/vi/w6OJFvK5WlY/0.jpg)](https://www.youtube.com/watch?v=w6OJFvK5WlY)
 
 ## 前提条件
 * node.js(v14.15.0以上)がインストールされている
