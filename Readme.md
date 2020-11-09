@@ -1,7 +1,13 @@
 # playwrightでe2eテストを作ってみた
 
 ## はじめに
-playwright + ava でe2eテストを作ってみました。
+[playwright](https://playwright.dev) + [ava](https://github.com/avajs/ava) でe2eテストを作ってみました。
+
+## テスト実行イメージ
+[![](https://img.youtube.com/vi/w6OJFvK5WlY/0.jpg)](https://www.youtube.com/watch?v=w6OJFvK5WlY)
+* 0:06 〜 0:10 e2eテストの実行
+* 0:11 〜 0:17 テストスクリーンショットの確認
+
 
 ## 前提条件
 * node.js(v14.15.0以上)がインストールされている
